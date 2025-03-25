@@ -1,1 +1,2 @@
 select province_id, sum(height) as sum_height from patients group by province_id having sum(height) >= 7000;
+select (max(weight) - min(weight)) as weight_delta from patients where last_name = 'Maroni';
